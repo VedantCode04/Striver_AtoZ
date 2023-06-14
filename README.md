@@ -1,4 +1,4 @@
-# Striver_AtoZ
+# Data Structures and Algorithms
 
 Hello everyone, myself Vedant . The purpose of this repository is to practice dsa in such a way that you could cover almost every type of dsa asked in interview at top Product Based Companies. I will be following the [Striver A to Z](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/) dsa sheet.
 
