@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 
 void secondSmall(vector<int> &arr, int size){
 	int small = INT_MAX;
