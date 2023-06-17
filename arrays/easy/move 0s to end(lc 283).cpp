@@ -11,10 +11,5 @@ class Solution {
               j++;
           }
       }
-
-      while(j < size){
-          arr[j] = 0;
-          j++;
-      }
   }
 };
