@@ -16,5 +16,11 @@ public:
         }
 
         return xor1 ^ xor2;
+
+ //    int size = a.size();
+	// int res = size;
+	// for(int i = 0; i < size; i++){
+	// 	res = res ^ i ^ a[i];
+	//   }
     }
 };
