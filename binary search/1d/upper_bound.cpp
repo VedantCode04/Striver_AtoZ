@@ -32,14 +32,14 @@ void sol(veci& a, int n)
 		int mid = low + (high - low)/2;
 
 		if(a[mid] < x){
+			ind = mid;
 			low = mid + 1;
 		} else {
-			ind = mid;
 			high = mid - 1;
 		}
 	}
 
-	cout << "lower position = " << ind << endl;
+	cout << "upper position = " << ind << endl;
 }
 
 int main()
