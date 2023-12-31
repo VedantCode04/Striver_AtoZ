@@ -31,11 +31,11 @@ void sol(veci& a, int n)
 	while(low <= high){
 		int mid = low + (high - low)/2;
 
-		if(a[mid] <= x){
+		if(a[mid] >= x){
 			ind = mid;
-			low = mid + 1;
-		} else {
 			high = mid - 1;
+		} else {
+			low = mid + 1;
 		}
 	}
 
