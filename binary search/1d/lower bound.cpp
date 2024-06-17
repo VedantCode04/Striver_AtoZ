@@ -13,47 +13,41 @@ using namespace std;
 
 template <typename T>
 
-void print(T& a)
+void printVec(veci(int) a)
 {
     for (auto val : a) {
         cout << val << " ";
     }
 }
 
-void sol(veci& a, int n)
-{
-	int x;
-	cin >> x;
-	int ind = n-1;
+void sol(veci(int) a)
+{	int n = a.size();
+	int k;
+	cin >> k;
 
-	int low = 0, high = n-1;
+	int l = 0, r = n-1, ind = -1;
 
-	while(low <= high){
-		int mid = low + (high - low)/2;
+	while(l <= r){
+		int mid = (l + r)/2;
 
-		if(a[mid] >= x){
+		if(a[mid]>=k){
 			ind = mid;
-			high = mid - 1;
+			r = mid - 1;
 		} else {
-			low = mid + 1;
+			l = mid + 1;
 		}
 	}
-
-	cout << "upper position = " << ind << endl;
+	cout << "lower index = " << ind << endl;
 }
 
 int main()
 {
     int n;
     cin >> n;
-
-    veci a;
-
-    for (int j = 0; j < n; j++) {
-        int x;
-        cin >> x;
-        a.push(x);
+    veci(int) v(n);
+    for (int i = 0; i < n; i++) {
+        cin >> v[i];
     }
 
-    sol(a, n);
+    sol(v);
 }
