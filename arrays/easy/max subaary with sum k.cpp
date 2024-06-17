@@ -16,8 +16,8 @@ int lenOfLongSubarr(int a[], int n, int k)
             maxLen = max(maxLen, i - preSum[rem]);
         }
 
-        if (preSum.find(rem) == preSum.end()) {
-            preSum[rem] = i;
+        if (preSum.find(sum) == preSum.end()) {
+            preSum[sum] = i;
         }
     }
 
